@@ -10,7 +10,7 @@ export default function CharacterPage() {
         <>
             <NavBar />
 
-            <h1>Character Page</h1>
+
 
 
 

@@ -8,7 +8,7 @@ export default function HousePage() {
     return (
         <>
             <NavBar />
-            <h1>House Page</h1>
+
 
 
 

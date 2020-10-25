@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar from '../../shared/utils/NavBar/NavBar'
 import Footer from '../../shared/utils/Footer/Footer'
-// import "./homePage.scss"
 
 export default function HomePage() {
 

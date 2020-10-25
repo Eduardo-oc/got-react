@@ -8,7 +8,7 @@ export default function ChronoPage() {
     return (
         <>
             <NavBar />
-            <h1>Chrono Page</h1>
+
 
 
 

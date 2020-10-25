@@ -40,8 +40,7 @@ export default function Routing() {
 
 
             </Switch>
-            {/* <NavBar /> */}
-            {/* <Footer /> */}
+
         </Router>
 
 
