@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import HousePage from './components/pages/HousePage/HousePage';
 import Routing from './components/shared/utils/Routing/Routing';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import HomePage from './pages/HomePages/HomePage';
