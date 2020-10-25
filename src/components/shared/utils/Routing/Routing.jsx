@@ -7,15 +7,17 @@ import HomePage from '../../../pages/HomePage/HomePage'
 import HouseDetaills from '../../../pages/HousePage/HouseDetaills/HouseDetaills';
 import HousePage from '../../../pages/HousePage/HousePage';
 import ChronoPage from '../../../pages/ChronoPage/ChronoPage';
+import Footer from '../Footer/Footer';
 
 
 export default function Routing() {
     return (
+
         <Router>
-            <NavBar />
+
 
             <Switch>
-                <Route path="HomePage">
+                <Route path="/HomePage">
                     <HomePage />
                 </Route>
                 <Route path="/CharacterPage">
@@ -38,7 +40,9 @@ export default function Routing() {
 
 
             </Switch>
+
         </Router>
+
 
     )
 }
