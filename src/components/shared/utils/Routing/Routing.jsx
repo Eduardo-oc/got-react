@@ -21,7 +21,7 @@ export default function Routing() {
                 <Route path="/CharacterPage">
                     <CharacterPage />
                 </Route>
-                <Route path="/CharacterDetaills">
+                <Route path="/CharacterDetaills/:character">
                     <CharacterDetaills />
                 </Route>
                 <Route path="/HouseDetaills">
