@@ -1,13 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavBar from '../NavBar/NavBar'
 import CharacterPage from '../../../pages/CharacterPage/CharacterPage';
 import CharacterDetaills from '../../../pages/CharacterPage/CharacterDetaills/CharacterDetaills';
 import HomePage from '../../../pages/HomePage/HomePage'
 import HouseDetaills from '../../../pages/HousePage/HouseDetaills/HouseDetaills';
 import HousePage from '../../../pages/HousePage/HousePage';
 import ChronoPage from '../../../pages/ChronoPage/ChronoPage';
-import Footer from '../Footer/Footer';
 
 
 export default function Routing() {
@@ -17,9 +15,7 @@ export default function Routing() {
 
 
             <Switch>
-                <Route path="/HomePage">
-                    <HomePage />
-                </Route>
+
                 <Route path="/CharacterPage">
                     <CharacterPage />
                 </Route>
@@ -34,6 +30,9 @@ export default function Routing() {
                 </Route>
                 <Route path="/ChronoPage">
                     <ChronoPage />
+                </Route>
+                <Route path="/">
+                    <HomePage />
                 </Route>
 
 

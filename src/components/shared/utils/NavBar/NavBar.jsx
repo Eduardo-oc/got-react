@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'
+import "./navBar.scss";
 
 // Aqui meteremos Idiomas, Enlace a las casas
 
