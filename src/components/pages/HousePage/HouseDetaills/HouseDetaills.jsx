@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import NavBar from "../../../shared/utils/NavBar/NavBar";
+import ButtonBack from "../../../shared/utils/ButtonBack/ButtonBack";
 
 export default function HouseDetaills() {
   const name = useParams().name;
@@ -18,6 +20,8 @@ export default function HouseDetaills() {
 
   return (
     <>
+      <NavBar />
+      <ButtonBack />
       <h1>Detail</h1>
       <div>
         <div>
@@ -31,24 +35,24 @@ export default function HouseDetaills() {
           <p>{houses.sigil}</p>
         </div>
         <div>
-            <h4>SEDE</h4>
-            <p>{houses.seat}</p>
+          <h4>SEDE</h4>
+          <p>{houses.seat}</p>
         </div>
         <div>
-            <h4>REGION</h4>
-            <p>{houses.region}</p>
+          <h4>REGION</h4>
+          <p>{houses.region}</p>
         </div>
         <div>
-            <h4>ALIANZAS</h4>
-            <p>{houses.allegiance}</p>
+          <h4>ALIANZAS</h4>
+          <p>{houses.allegiance}</p>
         </div>
         <div>
-            <h4>REGIONES</h4>
-            <p>{houses.region}</p>
+          <h4>REGIONES</h4>
+          <p>{houses.region}</p>
         </div>
         <div>
-            <h4>FUNDACION</h4>
-            <p>{houses.createdAt}</p>
+          <h4>FUNDACION</h4>
+          <p>{houses.createdAt}</p>
         </div>
       </div>
     </>
