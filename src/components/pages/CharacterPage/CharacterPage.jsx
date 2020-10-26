@@ -6,6 +6,7 @@ import CharacterGallery from "../../shared/components/CharacterGallery/Character
 import Search from "../../shared/utils/Search/Search";
 import NavBar from '../../shared/utils/NavBar/NavBar';
 import Footer from '../../shared/utils/Footer/Footer';
+import ButtonBack from "../../shared/utils/ButtonBack/ButtonBack";
 
 let allCharacters = [];
 
@@ -28,21 +29,22 @@ export default function CharacterPage() {
   }, []);
 
 
-    return (
-        <div>
-        <div>
-            <NavBar />
-    </div>
-<div>
-      <Search fnFilterCharacters={filterCharacters} />
+  return (
+    <div>
+      <div>
+        <ButtonBack />
+        <NavBar />
+      </div>
+      <div>
+        <Search fnFilterCharacters={filterCharacters} />
         <CharacterGallery character={character} />
+      </div>
+
+
+      <div>
+        <Footer />
+      </div>
     </div>
 
-
-<div>
-            <Footer />
-       </div>
-       </div>
-       
-    )
+  )
 }

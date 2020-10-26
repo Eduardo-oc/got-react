@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import CharacterGallery from "../../../shared/components/CharacterGallery/CharactersGallery";
+import ButtonBack from "../../../shared/utils/ButtonBack/ButtonBack";
+import "./CharacterDetaills.scss"
+import NavBar from "../../../shared/utils/NavBar/NavBar";
 
 let characterDetailed = [];
 
@@ -19,10 +22,13 @@ export default function CharacterDetaills() {
   console.log(character.titles);
 
   return (
+
     <div className="container-fluid">
-      <div className="row">
+      <ButtonBack />
+      <NavBar />
+      <div className="row " >
         <figure className="col-1">
-          <img src={character.image} alt={character.name} />
+          <img className="margin-top" src={character.image} alt={character.name} />
           <p>{character.name}</p>
         </figure>
       </div>
