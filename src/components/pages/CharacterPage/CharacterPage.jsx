@@ -30,14 +30,16 @@ export default function CharacterPage() {
 
 
   return (
-    <div>
+    <div className="container-fluid">
       <div>
         <ButtonBack />
         <NavBar />
       </div>
       <div>
         <Search fnFilterCharacters={filterCharacters} />
+        <SimpleBar style={{ height: 700, color:"white" }}>
         <CharacterGallery character={character} />
+        </SimpleBar>
       </div>
 
 

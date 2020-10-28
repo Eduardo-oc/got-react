@@ -3,16 +3,13 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import SimpleBar from "simplebar-react";
 import "simplebar/dist/simplebar.css";
-import CharacterGallery from "../../../shared/components/CharacterGallery/CharactersGallery";
 import ButtonBack from "../../../shared/utils/ButtonBack/ButtonBack";
-import "./CharacterDetaills.scss"
+import "./CharacterDetaills.scss";
 import NavBar from "../../../shared/utils/NavBar/NavBar";
 
-let characterDetailed = [];
-
 export default function CharacterDetaills() {
-  const [character, setCharacter] = useState({});
-  const [house, setHouse] = useState({});
+  const [character, setCharacter] = useState([]);
+  const [house, setHouse] = useState([]);
   const param = useParams().character;
 
   useEffect(() => {
@@ -20,35 +17,49 @@ export default function CharacterDetaills() {
       .get(`https://api.got.show/api/show/characters/${param}`)
       .then((res) => {
         setCharacter(res.data);
-        axios.get(`https://api.got.show/api/show/houses/${character.house}`).then((res) => {
-          setHouse(res.data);
-        });
+        axios
+          .get(`https://api.got.show/api/show/houses/${res.data.house}`)
+          .then((res) => {
+            setHouse(res.data[0]);
+          });
       });
   }, []);
 
-  console.log(character.allegiances);
   console.log(house);
+  // console.log(house.logoURL);
 
   return (
-
     <div className="container-fluid">
-      <ButtonBack />
-      <NavBar />
-      <div className="row " >
+      <div>
+        <ButtonBack />
+        <NavBar />
+      </div>
+      <div className="d-flex flex-row justify-content-center text-center">
         <figure className="col-1">
-          <img className="margin-top" src={character.image} alt={character.name} />
-          <p>{character.name}</p>
+          <img
+            className=""
+            src={character.image}
+            alt={character.name}
+          />
+          <p className="">{character.name}</p>
         </figure>
       </div>
 
       <div className="row">
         <div className="col-2">
           <h4>CASA/S</h4>
-          <figure className="col-1">
-            {/* <img src={house[0].logoURL} alt={character.house} />
-            <p>{character.house}</p> */}
-          </figure>
+          <SimpleBar style={{ maxHeight: 200, overflowX: "hidden" }}>
+            <figure className="col-1">
+              <img
+                className="img-fluid"
+                src={house ? house.logoURL:""}
+                alt={house ? house.name:""}
+              />
+              <p>{character.house}</p>
+            </figure>
+          </SimpleBar>
         </div>
+
         <div className="col-2">
           <h4>ALIANZAS</h4>
           <SimpleBar style={{ maxHeight: 200 }}>
@@ -71,7 +82,9 @@ export default function CharacterDetaills() {
         </div>
         <div className="col-2">
           <h4>PADRE</h4>
-          <p>{character.father}</p>
+          <SimpleBar style={{ maxHeight: 200 }}>
+            <p>{character.father}</p>
+          </SimpleBar>
         </div>
         <div className="col-2">
           <h4>HERMANOS</h4>
