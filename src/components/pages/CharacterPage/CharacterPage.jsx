@@ -7,6 +7,7 @@ import Search from "../../shared/utils/Search/Search";
 import NavBar from '../../shared/utils/NavBar/NavBar';
 import Footer from '../../shared/utils/Footer/Footer';
 import ButtonBack from "../../shared/utils/ButtonBack/ButtonBack";
+import './CharacterPage.scss'
 
 let allCharacters = [];
 
@@ -35,7 +36,7 @@ export default function CharacterPage() {
         <ButtonBack />
         <NavBar />
       </div>
-      <div>
+      <div className="medium-box">
         <Search fnFilterCharacters={filterCharacters} />
         <SimpleBar style={{ height: 700, color:"white" }}>
         <CharacterGallery character={character} />

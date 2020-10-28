@@ -15,7 +15,7 @@ export default function HomePage() {
             <NavBar />
 
             <h1 className="h1-home">GAME OF</h1>
-            <h1 className="h1-home">FRONTEND</h1>
+            <h1 className="h1-home margin-home">FRONTEND</h1>
 
             <Footer />
         </div>

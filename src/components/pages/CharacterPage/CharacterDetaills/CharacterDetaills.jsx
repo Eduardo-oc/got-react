@@ -6,6 +6,7 @@ import "simplebar/dist/simplebar.css";
 import ButtonBack from "../../../shared/utils/ButtonBack/ButtonBack";
 import "./CharacterDetaills.scss";
 import NavBar from "../../../shared/utils/NavBar/NavBar";
+import Footer from "../../../shared/utils/Footer/Footer";
 
 export default function CharacterDetaills() {
   const [character, setCharacter] = useState([]);
@@ -107,6 +108,7 @@ export default function CharacterDetaills() {
           </SimpleBar>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
