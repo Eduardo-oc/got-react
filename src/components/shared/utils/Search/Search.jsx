@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import './Search.scss';
 
 export default function Search(props) {
   const { register, handleSubmit, errors } = useForm();
@@ -11,14 +12,15 @@ export default function Search(props) {
 
   return (
     <form
+      className="container-fluid"
       onChange={handleSubmit(onKeyUp)}
       onKeyPress={(event) => {
-        if (event.which === 13 /* Enter */) {
+        if (event.which === 13) {
           event.preventDefault();
         }
       }}
     >
-      <input type="text" name="name" id="name" placeholder="search" ref={register} />
+      <input className="row align-items-start search" type="text" name="name" id="name" placeholder="search" ref={register} />
     </form>
   );
 }
