@@ -5,6 +5,7 @@ import CharacterGallery from "../../../shared/components/CharacterGallery/Charac
 import ButtonBack from "../../../shared/utils/ButtonBack/ButtonBack";
 import "./CharacterDetaills.scss"
 import NavBar from "../../../shared/utils/NavBar/NavBar";
+import Footer from "../../../shared/utils/Footer/Footer";
 
 let characterDetailed = [];
 
@@ -61,6 +62,7 @@ export default function CharacterDetaills() {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

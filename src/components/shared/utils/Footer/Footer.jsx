@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, Router } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import './Footer.scss'
 
 export default function Footer() {
 
