@@ -7,7 +7,7 @@ export default function HomePage() {
     const imageName = require('../../../assets/img/trono_got.jpg')
 
     return (
-        <div>
+        <div className="container-fluid">
 
 
             <img className="img-home" src={imageName} alt="Tronaco"
