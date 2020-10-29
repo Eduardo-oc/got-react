@@ -3,5 +3,13 @@
         "characters": "PERSONAJES",
         "house": "CASAS",
         "chronology": "CRONOLOGIA"
+    },
+    "details": {
+        "house": "CASA",
+        "allegiances": "ALIANZAS",
+        "appearances": "APARICIONES",
+        "father": "PADRE",
+        "siblings": "HERMANOS",
+        "titles": "TÍTULOS"
     }
 }
