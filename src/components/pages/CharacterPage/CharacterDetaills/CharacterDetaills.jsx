@@ -39,9 +39,9 @@ export default function CharacterDetaills() {
           <NavBar />
         </div>
         <div className="d-flex flex-row justify-content-center text-center">
-          <figure className="col-6">
-            <img className="" src={character.image} alt={character.name} />
-            <figcaption className="">{character.name}</figcaption>
+          <figure className="figure-detail col-6">
+            <img className="img-detail" src={character.image} alt={character.name} />
+            <figcaption className="figcaption-detail">{character.name}</figcaption>
           </figure>
         </div>
 
@@ -51,11 +51,11 @@ export default function CharacterDetaills() {
             <SimpleBar style={{ height: 220, overflowX: "hidden" }}>
               <figure className="img-shield">
                 <img
-                  className=""
+                  className="img-detail"
                   src={house ? house.logoURL : ""}
                   alt={house ? house.name : ""}
                 />
-                <p>{character.house}</p>
+                <p className="p-detail">{character.house}</p>
               </figure>
             </SimpleBar>
           </div>
@@ -66,7 +66,7 @@ export default function CharacterDetaills() {
               {character &&
                 character.allegiances &&
                 character.allegiances.map((item) => {
-                  return <p>{item}</p>;
+                  return <p className="p-detail">{item}</p>;
                 })}
             </SimpleBar>
           </div>
@@ -76,14 +76,14 @@ export default function CharacterDetaills() {
               {character &&
                 character.appearances &&
                 character.appearances.map((item) => {
-                  return <p>{item}</p>;
+                  return <p className="p-detail">{item}</p>;
                 })}
             </SimpleBar>
           </div>
           <div className="col-2">
             <h5>{t("details.father")}</h5>
             <SimpleBar style={{ maxHeight: 200 }}>
-              <p>{character.father}</p>
+              <p className="p-detail">{character.father}</p>
             </SimpleBar>
           </div>
           <div className="col-2">
@@ -92,7 +92,7 @@ export default function CharacterDetaills() {
               {character &&
                 character.siblings &&
                 character.siblings.map((item) => {
-                  return <p>{item}</p>;
+                  return <p className="p-detail">{item}</p>;
                 })}
             </SimpleBar>
           </div>
@@ -102,7 +102,7 @@ export default function CharacterDetaills() {
               {character &&
                 character.titles &&
                 character.titles.map((item) => {
-                  return <p>{item}</p>;
+                  return <p className="p-detail">{item}</p>;
                 })}
             </SimpleBar>
           </div>
