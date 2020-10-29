@@ -9,6 +9,8 @@ export default function Search(props) {
     console.log(data);
   };
 
+
+
   return (
     <form
       onChange={handleSubmit(onKeyUp)}
