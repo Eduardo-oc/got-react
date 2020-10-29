@@ -11,7 +11,6 @@ import './CharacterPage.scss'
 
 let allCharacters = [];
 
-
 export default function CharacterPage() {
   const [character, setCharacter] = useState([]);
 
