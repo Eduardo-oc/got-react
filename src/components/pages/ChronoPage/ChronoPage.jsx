@@ -8,7 +8,7 @@ import './Chrono.scss'
 
 export default function ChronoPage() {
 
-    const [data, setData] = useState([]);
+    const [characters, setCharacters] = useState([]);
     // const [age, setAge] = useState([]);
 
     // useEffect(() => {
@@ -21,17 +21,21 @@ export default function ChronoPage() {
 
     useEffect(() => {
         axios.get("https://api.got.show/api/show/characters/").then((res) => {
-            setData(res.data);
+            setCharacters(res.data);
             console.log(res.data);
         })
     }, [])
 
     return (
         <>
-            <ButtonBack />
-            <NavBar />
             <div>
-                <ChronoGallery data={data} />
+                <ButtonBack />
+                <NavBar />
+            </div>
+
+            <div>
+
+                <ChronoGallery characters={characters} />
 
             </div>
             <Footer />
