@@ -42,6 +42,12 @@ useEffect(()=>{
     })
 }, [])
 
+    useEffect(() => {
+        axios.get('https://api.got.show/api/show/houses').then(res => {
+            console.log(res.data);
+            setHouses(res.data);
+        })
+    }, [])
 
 
 

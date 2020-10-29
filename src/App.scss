@@ -56,19 +56,23 @@
 
 .h1-home{
   position: relative;
-  font-size: 100px;
+  font-size: 80px;
+}
+
+.margin-home {
+  margin-bottom: 250px;
 }
 /* NAV */
-.li-nav {
-  top: -130px;
-  position: relative;
-    display: inline-flex;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 40px;
-    left: 550px;
-    cursor: pointer;
-}
+// .li-nav {
+//   top: -130px;
+//   position: relative;
+//     display: inline-flex;
+//     text-decoration: none;
+//     margin-left: 20px;
+//     font-size: 40px;
+//     left: 550px;
+//     cursor: pointer;
+// }
 
 .link-nav{
   text-decoration: none;
@@ -76,6 +80,7 @@
 
 
 /* Footer */
+
 
 .ul-footer {
   bottom: -20px;
@@ -92,4 +97,9 @@
 .link-footer{
   text-decoration: none;
   color: white;
+}
+
+body {
+  margin:0;
+  padding:0;
 }
