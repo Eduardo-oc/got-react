@@ -18,14 +18,14 @@ export default function ChronoGallery(props) {
                 <button className="btn-chrono btn-h " onClick={() => setChangeList(true)}> <span> ⬆ </span>  </button>
                 <button className="btn-chrono btn-margin" onClick={() => setChangeList(false)}> <span> ⬇ </span>  </button>
             </div>
-            <SimpleBar style={{ height: 700, width: 500, color: "white" }}>
+            <SimpleBar style={{ height: 700, width: 600, color: "white" }}>
                 <div>
                     {changeList === true && characListUp.map((character, i) => (
                         <div class={`contain ${i % 2 === 0 ? 'left' : 'right'}`} >
                             <div class="content">
                                 <p className="p-chrono">{character.age?.age || 'Edad desconocida'}</p>
                                 <h3 className="h3-chrono">{character.name}</h3>
-                                <figure>
+                                <figure >
                                     <img className="img-chrono" src={character.image} alt="" />
                                 </figure>
                             </div>
@@ -39,7 +39,7 @@ export default function ChronoGallery(props) {
                             <div class="content">
                                 <p className="p-chrono">{character.age?.age || 'Edad desconocida'}</p>
                                 <h3 className="h3-chrono">{character.name}</h3>
-                                <figure>
+                                <figure >
                                     <img className="img-chrono" src={character.image} alt="" />
                                 </figure>
                             </div>
