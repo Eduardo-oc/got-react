@@ -3,5 +3,13 @@
         "characters": "CHARACTERS",
         "house": "HOUSE",
         "chronology": "CHRONOLOGY"
+    },
+    "details": {
+        "house": "HOUSE",
+        "allegiances": "ALLEGIANCES",
+        "appearances": "APPEARANCES",
+        "father": "FATHER",
+        "siblings": "SIBLINGS",
+        "titles": "TITLES"
     }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./CharactersGallery.scss";
 
 export default function CharacterGallery(props) {
   return (
@@ -8,8 +9,8 @@ export default function CharacterGallery(props) {
           <figure className="col-2">
             <a href={"./CharacterDetaills/" + item.name}>
               <img className="img-fluid" src={item.image} alt={item.name} />
-              <p className="">{item.name}</p>
             </a>
+            <figcaption className="">{item.name}</figcaption>
           </figure>
         ))}
       </div>
