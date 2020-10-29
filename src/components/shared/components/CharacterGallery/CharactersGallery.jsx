@@ -6,11 +6,11 @@ export default function CharacterGallery(props) {
     <div className="container-fluid">
       <div className="d-flex flex-row flex-wrap justify-content-around">
         {props.character.map((item, index) => (
-          <figure className="col-2">
+          <figure className="col-2 figure-gallery">
             <a href={"./CharacterDetaills/" + item.name}>
-              <img className="img-fluid" src={item.image} alt={item.name} />
+              <img className="img-fluid img-gallery" src={item.image} alt={item.name} />
             </a>
-            <figcaption className="">{item.name}</figcaption>
+            <figcaption className="figcaption-gallery">{item.name}</figcaption>
           </figure>
         ))}
       </div>
