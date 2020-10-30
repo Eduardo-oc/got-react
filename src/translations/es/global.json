@@ -17,5 +17,13 @@
     },
     "search": {
         "placeholder": "buscar"
+    },
+    "houses": {
+        "sigil": "LEMA",
+        "seat": "SEDE",
+        "region": "REGIÓN",
+        "allegiances": "ALIANZAS",
+        "religion": "RELIGIÓN",
+        "foundation": "FUNDACIÓN"
     }
 }
