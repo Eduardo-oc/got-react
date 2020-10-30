@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//import './HouseGallery.scss'; 
+import './HouseGallery.scss'; 
 export default function HouseGallery(props) {
 
 
@@ -12,9 +12,9 @@ export default function HouseGallery(props) {
         <div className="img" >
           <figure className='col-2 size'>
           <Link to={'./HouseDetaills/'+ item.name}>
-            <img src={item.logoURL ? item.logoURL:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png/220px-A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png'}></img>
-            <p>{item.name}</p>
+            <img className="img" src={item.logoURL ? item.logoURL:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png/220px-A_Song_of_Ice_and_Fire_arms_of_House_Lannister_red_scroll.png'}></img>
             </Link>
+            <figcaption className ="figcaption-gallery">>{item.name}</figcaption>
           </figure>
         </div>
       )}

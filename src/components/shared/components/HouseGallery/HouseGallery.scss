@@ -1,0 +1,24 @@
+.size{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    
+
+}
+
+.img{
+    
+    //width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    
+}
+.figcaption-gallery {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    margin: 0 5%;
+}
