@@ -14,7 +14,7 @@ export default function NavBar() {
     return (
         <nav >
             <ul>
-                <li className="li-nav house-nav"><Link className="link-nav" to="/HousePage"> 🏰 </Link></li>
+                <li className="li-nav house-nav"><Link className="link-nav" to="/"> 🏰 </Link></li>
                 <li onClick={() => i18n.changeLanguage("es")} className="li-nav"> 🇪🇸 </li>
                 <li onClick={() => i18n.changeLanguage("en")} className="li-nav"> 🇬🇧 </li>
             </ul>

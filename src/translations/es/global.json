@@ -11,5 +11,11 @@
         "father": "PADRE",
         "siblings": "HERMANOS",
         "titles": "TÍTULOS"
+    },
+    "button": {
+        "back": "ATRÁS"
+    },
+    "search": {
+        "placeholder": "buscar"
     }
 }
