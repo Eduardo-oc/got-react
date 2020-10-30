@@ -1,0 +1,34 @@
+.medium-box {
+    margin-bottom: 80px;
+}
+
+
+.figure-detail {
+    height: 400px;
+    position: relative;
+}
+
+.img-detail {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.figcaption-detail {
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    margin: 0 5%;
+}
+
+.p-detail {
+    font-size: 1rem;
+}
+
+.img-shield {
+    max-width: 100%;
+    height: 130px;
+    object-fit: scale-down;
+}

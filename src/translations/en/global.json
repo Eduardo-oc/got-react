@@ -17,5 +17,13 @@
     },
     "search": {
         "placeholder": "search"
+    },
+    "houses": {
+        "sigil": "SIGIL",
+        "seat": "SEAT",
+        "region": "REGION",
+        "allegiances": "ALLEGIANCES",
+        "religion": "RELIGION",
+        "foundation": "FOUNDATION"
     }
 }
