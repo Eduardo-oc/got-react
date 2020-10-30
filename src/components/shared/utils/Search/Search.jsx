@@ -1,9 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 import './Search.scss';
 
 export default function Search(props) {
   const { register, handleSubmit, errors } = useForm();
+  const { t, i18n } = useTranslation("global");
 
   const onKeyUp = (data) => {
     props.fnFilterCharacters(data);
@@ -22,7 +24,7 @@ export default function Search(props) {
         }
       }}
     >
-      <input className="row align-items-start search" type="text" name="name" id="name" placeholder="search" ref={register} />
+      <input className="row align-items-start search" type="text" name="name" id="name" placeholder={t("search.placeholder")} ref={register} />
     </form>
   );
 }

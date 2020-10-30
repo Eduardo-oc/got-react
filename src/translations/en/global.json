@@ -11,5 +11,11 @@
         "father": "FATHER",
         "siblings": "SIBLINGS",
         "titles": "TITLES"
+    },
+    "button": {
+        "back": "BACK"
+    },
+    "search": {
+        "placeholder": "search"
     }
 }
