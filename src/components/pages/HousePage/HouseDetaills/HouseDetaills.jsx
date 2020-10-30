@@ -19,9 +19,9 @@ export default function HouseDetaills() {
   console.log(houseName);
   return (
     <>
-      <div className="container-fluid">
-        <div className="row">
-          <figure className="col-2">
+      <div className="conteiner-fluid">
+        <div className="d-flex flex-row justify-content-center text-center">
+          <figure className="col-1">
             <img src={houseName[0].logoURL} alt=""></img>
             <h1>{houseName[0].name}</h1>
           </figure>
