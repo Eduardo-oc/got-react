@@ -7,7 +7,7 @@ import "simplebar/dist/simplebar.min.css";
 export default function ChronoGallery(props) {
 
     const [changeList, setChangeList] = useState(true);
-
+    //Como sort es una funcion que modifica el array original, usamos los ... para crear un nuevo array y asi no peta.
     const characListUp = [...props.characters].sort((a, b) => ((a.age?.age || 0) < (b.age?.age || 0)) ? 1 : -1);
 
     const characListDown = [...props.characters].sort((a, b) => ((a.age?.age || 0) > (b.age?.age || 0)) ? 1 : -1);
